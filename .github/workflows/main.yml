@@ -1,0 +1,13 @@
+name: first-actions
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: say hello
+        run: echo Hello GitHub Actions
