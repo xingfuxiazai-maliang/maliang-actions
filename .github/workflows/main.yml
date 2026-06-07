@@ -1,0 +1,19 @@
+name: 我的第一个 GitHub Actions
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 打印一句话
+        run: echo "你好，马良！GitHub Actions 已经运行成功。"
+
+      - name: 显示当前时间
+        run: date
+
+      - name: 显示系统信息
+        run: uname -a
